@@ -1,0 +1,145 @@
+Curso de HTML5 e CSS disponibilizado pelo site Curso em Vídeo
+
+
+# TEORIA
+
+HTML e CSS são tecnologias client-side, lado do cliente (front-end == Nome utilizado pelo mercado)
+
+server-side ou back-end é linguagem do lado do servidor (comunicação com o servidor)
+    linguagens: php, js, C#, Python, Ruby, JAVA...
+
+
+
+Referências
+
+1 - Referência MDN (Mozilla Developer Network)
+https://developer.mozilla.org/pt-BR/docs/Web/HTML/ReferenciaHTML
+
+
+# Disponíveis apenas em Inglês 
+
+2 - W3C - Referência Oficial (WOrld Wide Web Consortium)
+https://www.w3.org/standards/
+
+3 - WHATWG Living Standard (Web Hypertext Application Technology Working Group)
+https://html.spec.whatwg.org/multipage/
+
+4 - W3Schools (Refsnes Data)
+https://www.w3schools.com/python/python_exercises.asp
+
+ 
+# Binário
+As máquinas se comunicam através de zeros e ums (0 1)
+Esses 0 e 1 são chamados de binaty digit e é igual a sigla, bit
+
+Para pode representar alguma coisa esses bits são reunidos em um conjuto de 8 bits. O que forma o byte, ou seja, um conjunto de 8 bits, representa 1 byte. (* Código multibyte UTF-8 )
+
+
+Multiplos do byte
+    Representação de Dados
+
+    1024 bytes = 1 KB (Kilobyte)
+    1024 KB = 1 MB (Megabyte)
+    1024 BM = 1 GB (Gigabyte)
+    1024 GB = 1 TB (Terabyte)
+    1024 TB = 1 PB (Petabyte)
+    1024 PB = 1 EB (Exabyte)
+    1024 EB = 1 ZB (Zetabyte)
+    1024 ZB = 1 YB (Yotabyte)
+[...]
+E tem mais...
+
+byte MB= armazenamento | bit Mb = trasmissão
+
+Para saber IPs acessar o site https://www.iplocation.net
+
+Capítulo 3 - A Diferença entre HTML, CSS e JavaScript
+
+* Tecnicamente HTML e CSS não são consideradas uma linguagem de programação.
+o Correto é falar que DESENVOLVE algo em HTML e CSS
+
+HTML = HyperText Markup Language (Linguagem de Marcação para HiperTexto)
+
+CSS = Cascading Style Sheets (Folhas de Estilo em Cascata)
+* Uma modifica a caracteristica padrão da outra, por isso, cascata.
+
+
+** HTML é focada em CONTEÚDO! **
+E esse conteúdo pode ser, texto, imagem, vídeos, tabelas, listas e etc.
+
+** CSS tem o foco em DESIGN! **
+E é relacionada a Cores, sombras, tamanhos, posicionamentos e etc.
+
+** JavaScript é responsável pelas INTERAÇÕES! **
+Relacionada a menus, animações, popups, validações e etc.
+
+* Dica *
+Extensão para o Chrome - Web Developer
+
+CONTEÚDO EM HTML
+
+    Abrir e Fechar TAGs
+    Sempre será representada pela abertura e fechamento <></>
+
+    <h1>Exemplo de título</h1>
+
+    <p>Exemplo de parágrafo</p>
+
+    <img src="foto,png" alt="Exemplo de Foto">
+        Descrevendo: colocando uma imagem, cujo a origem (src=" ") é foto.png e o texto alternativo (alt="") é, Exemplo de Foto.    
+            explicando:
+                <img == Abertura da Tag
+                src=" " e alt=" " == Parâmetros 
+                O que estiver dentro das aspas do parâmetro é chamdo de valor.
+
+
+Tags sem fechamento
+<img>
+<hr>
+<meta>
+
+* A maioria tem abertura e fechamento
+
+
+
+ESTILO CSS
+
+    Como monta?
+        Utilizando os seletores.
+            * Os seletores são os indicadores de onde a mundaça visual vai acontecer.
+            ** As informações descritas dento do seletor são chamadas de: DECLARAÇÃO
+            *** Dentro das declarações, a informação antes dos 2 pontos (:) é chamada de PROPRIEDADE. E o que vem depois dos dois pontos (:) é chamado de VALOR.
+
+    Abaixo, exemplo de seletor:
+
+    h1{
+        font-family: Arial;
+        font-size: 20pt;
+        color: blue;
+
+    }
+    * O Seletor acima basicamente diz o seguinte: Lá no meu h1 eu quero que a fonte seja ARIAL, o tamanho da fonte seja 20 e a color que ela vai aparecer seja AZUL.
+
+
+ESTRUTURA BÁSICA DE UM DOCUMENTO HTML
+
+<!DOCTYPE html>                    # quer dizer que será desenvolvido um site em HTML5
+<html lang="pt-br">                # Abertura e fechamendo da tag html
+    <head>                         # head é a área de configurações
+        <meta charset="UTF-8">     # O site vai ser compatível acentuações e exeçoes da lingua pt.
+        <meta name="viewport"      # O site vai ocupar 100% da tela branca e vai ser em escala 100% também
+        content="width=device-width,
+        initial-sacle=1.0">
+        <title>Document</title>    # É o título que vai aparecer do site, na aba do navegador.
+    
+    
+    
+    
+    
+    </head>
+    <body>                          # É o copo do site, ou seja, onde está o site de fato.
+                                    # Conteúdos, menus do site ficam todos no corpo(body) do site.
+        <h1>Olá, Mundo!</h1>        # Exemplo de título do site.
+    
+    </body>
+</html>
