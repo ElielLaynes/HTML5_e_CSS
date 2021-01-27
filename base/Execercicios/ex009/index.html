@@ -7,6 +7,59 @@
 </head>
 <body>
     <h1>Outras Formataões de Texto</h1>
-    
+    <h2>Código Fonte e Pré-Formatação</h2> <!--Coloca a tag code e o texto fica com fonte monoespaçada-->
+    <p>O camando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p>
+    <p>Exemplo usando diretamente a tag CODE com um script Python.</p>
+    <code>
+        num = int(input('Digite um número: '))
+        if num % 2 == 0:
+            print(f'O número {num} é PAR.)
+        else:
+            print(f'o número {num} é ÍMPAR')
+        print('Fim do Programa')
+    </code>
+    <p>O "Problema" de usar direto a tag CODE é que ela não organiza o código e deixa ele escrito em linha, o que dificulta a leitura do código, como no exmplo acima.</p>
+    <p>Para solucionar esse ponto, pode-se usar a tag PRE, exemplo: Pega a Tag CODE e envelopa ela dentro da tag PRE e o código vai ficar organizado para leitura como no exemplo abaixo.</p>
+    <pre>
+        <code>
+            num = int(input('Digite um número: '))
+            if num % 2 == 0:
+                print(f'O número {num} é PAR.)
+            else:
+                print(f'o número {num} é ÍMPAR')
+            print('Fim do Programa')
+        </code>
+    </pre>
+    <p>Para deixar o código mais perdo da borda esquerda, é só tirar os espaços de tabulação. Caso queria acrescentar espaço, seleciona todo o código novamente e da um TAB</p>
+    <pre>
+        <code>
+    num = int(input('Digite um número: '))
+    if num % 2 == 0:
+        print(f'O número {num} é PAR.)
+    else:
+        print(f'o número {num} é ÍMPAR')
+    print('Fim do Programa')
+        </code>
+    </pre>
+
+    <h2>Citações</h2> <!--Utilizando a tag Q (quote) para fazer citação.-->
+    <p>Esse aqui, <q>é exemplo de uma citação</q> com abetura e fechamento de aspas.</p>
+
+    <h2>Citações Completas</h2> <!--Para citações completas tem a tag blockquote-->
+    <p>Estele Weyl, em seu livro, Mobile HTML5: Usando Já o que há de mais recente, pontua que:</p>
+    <blockquote cite="https://books.google.com.br/books?id=BhoMBAAAQBAJ&lpg=PA55&dq=html5&hl=pt-BR&pg=PA55#v=onepage&q=html5&f=false">
+        O HTML5 aperfeiçoa o HTML4 e o XHTML, englobando os elementos de versões anteriores, removendo elementos obsoletos, adicionando alguns elementos novos e redefinindo ou ajustando outros elementos.
+    </blockquote>
+    A Tag blockquote, tem um parâmetro chamado cite="", onde pode ser colocado a URL onde se encotra o livro, por exemplo. Isso Não alatera em nada a formatação, mas é bom para o Google Ver de onde está vindo essa citação e fica mais claro para o buscador e mater os direitos autorais.
+
+    <h2>Abreviações</h2> <!--tag abbr-->
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. É super Bacana, Estou me diverdindo.</p>
+    <p>Usa-se a tag abbr para marcar a abreviação e colocar o nome todo do texto</p>
+
+    <h2>Texto Invertido</h2>
+    <p>usando a tag BDO</p>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisa em HTML</bdo></p>
+
+
 </body>
 </html>
