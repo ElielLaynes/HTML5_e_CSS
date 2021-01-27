@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Usando Links Externos</h1>
+    <p>A duas maneiras de adicionar links externos. utilizando a tag A, o HTML cria uma Âncora onde coloca a referência do link externo que você quer mandar o usuário.</p>
+    <p>Você pode Acessar meu <a href="https://github.com/ElielLaynes">repositório público no GitHub.</a></p>
+    <p>Você Pode Acessar o meu <a href="https://www.linkedin.com/in/eliellaynes/">perfil no Linkedin</a>.</p>
+    <p>Mas para que os site não sobreponha a página atual, é importante passar os parâmetros, target="_blank" e rel="external", para abrir em outra aba do navegador. Exemplo:</p>
+    <p>Você pode Acessar meu <a href="https://github.com/ElielLaynes" target="_blank" rel="external">repositório público no GitHub.</a></p>
+    <p>Você Pode Acessar o meu <a href="https://www.linkedin.com/in/eliellaynes/" target="_blank" rel="external">perfil no Linkedin</a>.</p>
+
+    <h1>Usando Links Internos</h1>
+    <p>Está é a primeira página do site. Se você quiser, pode acessar também a segunda página do site, aqui: <a href="pag002.html" rel="next">Segunda Página</a></p>
+
+    <p>Para linkagem interna, não tem o rel="internal", porém, tem o rel="next" para ir para a próxima página e rel="prev" para voltar a página anterior. E isso ajuda os "Robos dos buscadores" a lerem o site melhor também.</p>
+
+    <p>Outra Observação é que, caso você não confie em algum link externo que você está direcionando, usa-se como boa prática o parâmetro rel="nofollow". Isso é especialmente para os mecanismos de busca também. Exemplo:</p>
+    <p><a href="https://www.exemplonofollow.com.br" target="_blank" rel="nofollow">Link nofollow</a>.</p></p>
+    <hr>
+    <p>Este é um exemplo, caso seu arquivo esteja em uma sub pasta</p>
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html">Página de Notícias</a></p>
+
+    <h1>Abrir as Páginas do site na aba Atual</h1>
+    <p>Para abrir as páginas do site na mesma aba que o usuários está, pode-se não colocar parâmetro nenhum, só fazer a Âncora, ou também colocar o parâmetro target="_self". Exemplos:</p>
+    <p><a href="pag002.html" target="_self">Página 2</a></p>
+    <p><a href="noticias/pag003.html" target="_self">Página 3 - Notícias</a></p>
+
+    <h1>Links Para Download</h1>
+    <p>Para fazer download de um arquivo, utiliza os argumentos download="nome do arquivo" target="application/pdf" ou zip. Aqui é importante destacar que os tipos de mídia não são todos os mesmos, então para ver todos os tipos, acessar o site <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="external">iana.org</a> E ir na página, Media Types</p>
+    <ul>
+        <li><a href="livro/CV_Eliel Laynes.docx.pdf" download="CV_Eliel Laynes.docx.pdf" type="application/pdf">Baixar Aquivo em PDF</a>
+        <li><a href="livro/CV_Eliel Laynes.docx.pdf" download="CV_Eliel Laynes.docx.pdf" type="application/zip">Arqruivo Compactado em ZIP</a>
+
+    </ul>
+</body>
+</html>
