@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista em HTML</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas em HTML</h1>
+    <h2>Listas Ordenadas</h2> <!--As listas no qual, a ordem faz diferença-->
+    <p>Com a tag OL (order list), cria-se uma Lista Ordenada. Para cada Item da lista, usa-se a tag LI (list item)</p>
+
+    <ol type="1"> <!--type=" " dentro da tag OL serve para mudar os marcadores da lista entre números, letras e algarismos romanos.-->
+        <!--A partir do HTML5 fechar a tag <li> NÃO É mais obrigatório. Exemplo abaixo:-->
+        <li>Acordar;
+        <li>Tomar Café;
+        <li>Limpar a casa;
+        <li>Colocar a Roupa para lavar;
+        <li>Fazer Almoço.
+    </ol>
+    <p>Dessa forma, não precisa ficar trocando os números caso seja precisa acrescentar outro intem na lista fora de ordem.</p>
+
+    <h2>Listas Não Ordenadas</h2>
+    <p>Para listas Não Ordenadas, usar-se a tag UL (Unordered List).
+        Em relação ao type=" " dentro da tag UL, só há 3 opções: disc (Círculo preenchido), circle (Círculo sem preenchimento), square (Quadrado preenchido).
+        O Padrão é o disc.
+    </p>
+    <ul type="circle">
+        <li>Pão
+        <li>Leite
+        <li>Tomate
+        <li>Arroz
+        <li>Feijão
+    </ul>
+
+    <h2>Juntando Listas versão 1.0</h2>
+    <p>Minhas Linguages Favoritas:</p>
+    <ol>
+        <li>Antigas
+            <ol type="a">
+                <li>Clipper</li>
+                <li>Visual Basic
+                <li>Delphi
+            </ol>
+        <li>Novas
+            <ol type="a">
+                <li>Python
+                <li>JavasScrip
+                <li>Dart
+            </ol>
+    </ol>
+
+    <h2>Meus Jogos Favoritos</h2>
+    <p>Aninhamdo OL com UL para colocar listas uma dentro da outra.</p>
+    <ol>
+        <li>NES</li>
+        <ul type="square">
+            <li>Mario Bros
+                <ul type="circle">
+                    <li>Mario Bros 3
+                    <li>mario: Lost Levels
+                </ul>
+            <li>Ninja gaiden
+        </ul>
+        <li>SNES</li>
+        <ul type="square">
+            <li>Mario
+            <li>Donkey Kong
+        </ul>
+        <li>PlayStation</li>
+        <ul type="square">
+            <li>Final Fantasy
+            <li>Carlevania
+        </ul>
+    </ol>
+
+    <h2>lista de Definição</h2>
+    <p>Funciona com um dicionário. Coloca-se o Termo e logo depois a Definição dele. Para criar uma lista de definição usa a tag DL (Definition list). Depois de criar a DL, coloca duas tags dentro, a DT (Definition Term) e DD (Definition Description)</p>
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>Liguagem de marcação para a criação de conteíudo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>liguagem de marcação para a criação do design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+    </dl>
+</body>
+</html>
