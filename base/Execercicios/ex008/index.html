@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formatação de Textos</title>
+<!--Abaixo, maneira correta de mudar o marcador em um texto, criando a tag slyle e adicionando um seletor para a tag mark-->
+    <style>
+        mark{
+            background-color: coral;
+        }
+    </style>
 </head>
 <body>
     <h1>Principais Formtações de Texto</h1>
@@ -18,5 +24,32 @@
     <p>
         Nesta frase, temos um  <em>termo em Itálico ou com ênfase</em> usando a tag EM (Com Semântica)
     </p> 
+
+    <h2>Texto Marcado</h2>
+    <!--Como padrão a cor com MARK é amarela, mas pode-se usar style=" " dento da tag para mark para mudar a coro do fundo. Exemplo: mark style="background-color: rgb(221, 85, 85);">
+        texto marcado
+    </mark> Muda a cor do fundo do testo para vermelho. Porém não é o recomendado-->
+    <p>Podemos criar um <mark>
+        texto marcado
+    </mark> usando a tag MARK.</p>
+    <p>Aqui há outro <mark>
+        texto marcado
+    </mark> para exemplo</p>
+<!--Para mudar a cor de fundo de uma marcação, o ideal é criar uma tag style na head e criar um seletor pra mark-->
+
+    <h2>Texto Pequeno e Grande</h2>
+    <p>Aqui está sendo criado um <small>Texto Pequeno</small> e um <big>Texto Grande</big></p>
+<!--A tag BIG está obsoleta, por isso fica vemelha no vscode. Já a tag small está me pleno funcionamento. Para deixar as letras grades, cria-se uma classe no CSS e altera via CSS, se for o caso-->
+
+    <h2>Texto Deletado</h2>
+    <p>Podemos marcar <del>um texto como excluído</del> para indicar que ele deve ser lido, mas não considerado.</p> <!--A tag del risca o texto-->
+    <h2>Texto Inserido</h2>
+    <p>Podemos marcar <ins>um texto como inserido</ins> para dar ênfase e indicar que ele foi adicionado depois.</p> <!--A tag ins subilnha o texto-->
+
+    <h2>Texto Sobrescrito</h2> <!--A tag sup coloca o caracter em questão pra cima, elevado.-->
+    <p>Para Inserir coisa do tipo função elevada: x<sup>20</sup>+3</p>
+    <h2>Texto Subscrito</h2> <!--A tag sub coloca o caracter em questão pra baixo-->
+    <p>Para inserir coisa do tipo: H<sub>2</sub>O </p>
+
 </body>
 </html>
