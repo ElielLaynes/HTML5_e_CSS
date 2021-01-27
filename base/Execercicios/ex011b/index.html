@@ -25,5 +25,27 @@
         <source media="(max-width: 1050px)" srcset="foto-m.png" type="image/png">
         <img src="foto-g.png" alt="Imagem flexivel">
     </picture>
+
+    <h1>Reproduzinho Audios</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5</p>
+    <p>maniera Simples com a tag AUDIO:</p>
+    <!--Tem que tomar cuidado com a compatibilidade de navegador. Com o parâmetro autoplay o audio reproduziu direto no safari, mas não no chrome, sendo necessário acrescentar o parâmetro controls para poder reproduzir no chrome-->
+    <audio src="midia/Rocking Chair - Unicorn Heads.mp3" controls autoplay></audio> <!--Formatos aceitos - MP3, WAV, OGG-->
+
+    <p>Maniera mais completa de adicionar AUDIO:</p>
+    <!--Sempre levar em consideração que o navegador vai tentar reporuzir na ordem de cima para baixo-->
+    <!--Para que o audio reproduza no navegador, é importante colocar na abertura da tag audio, o parâmetro, preloar="metada", para que no carregamento do site, o HTML carregue as informações visuais do play, e somente quando o usuário der play que vai baixar o audio. Depois, da mesma forma, coloca os parâmetros, autoplay e controls. Pode-se acrescentar o parâmetro loop, caso queira que o audio fiquei reproduzinho sempre. (não recomendado)-->
+    <audio preload="metadata" controls>
+        <source src="midia/Communicator - Reed Mathis.mp3" type="audio/mpeg">
+        <source src="midia/Rocking Chair - Unicorn Heads.ogg" type="audio/ogg">
+        <source src="midia/Rocking Chair - Unicorn Heads.wav" type="audio/wav"> <!--Arquivos WAV são muito pesados-->
+        <!--Caso nenhum tipo de audio funcione-->
+        <p>Infelizmente seu navegador não consegue reproduzir audio.<a href="midia/Rocking Chair - Unicorn Heads.mp3">clique aqui para baixar o arquivo mp3</a></p>
+    </audio> 
+
+
+
+
+
 </body>
 </html>
