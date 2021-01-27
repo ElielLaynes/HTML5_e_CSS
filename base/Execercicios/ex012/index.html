@@ -3,9 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trabalhando com Vídeos</title>
+    <title>Vídeos em HTML5</title>
 </head>
 <body>
-    <h1>Implementando vídeos no HTML5</h1>
+    <h1>Inserindo vídeos hospedados LOCALMENTE</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <p>Assim como em implementação de audios, A tag video gera uma implementação simples de vídeo. para ajustar o vídeo, é só usar os parâmetros width="largura_do_video " autoplay(Que funcionou no safari, nas não no chrome) e controls(para aparecer os controles do vídeo)</p>
+    <video src="midia/surf_720p30.mp4" width="500" controls autoplay></video>
+    <p>Observação: Sempre ficar atento e colocar a maioria dos formatos compatíveos com os navegadores.</p>
+
+    <h2>Maneira completa de colocar um vídeo na página</h2>
+    <p>Da mesma forma que no audio, usa a tag source:src dentro da tag VIDEO e acrescenta os arquivos. Importante que na abertura da tag Vídeo, tenha parâmetros como: preload(para carregar alguns infos do vídeo e não todo ele), width(para ajustar a largura), poster(para colocar uma capa no vídeo) loop (para o vídeo ficar reproduzindo)e controls(para os controles do vídeo)</p>
+    <h2>IMPORTANTE</h2>
+    <P>Essa é uma maneira completa de adicionar vídeos, porém, se o site tiver muitos acessos, vai consumir muita banda de internet e vai ficar caro demais hospedar.</P>
+    <video preload="metadata" width="500" poster="imagens/capa_surf.jpg" controls loop>
+        <source src="midia/surf_720p30.mp4" type="video/mp4">
+        <source src="midia/surf-full.webm" type="video/webm">
+        <p>Seu navegador não tem compatilibidade com reprodução de Vídeos.</p>
+    </video>
+    
+    <h1>Colocando vídeos de sites de vídeos</h1>
+    <p>Aqui vamos incorporar vídeos de outras sites de hospedagem de vídeos como por exemplo: Youtube, Vimeo e etc.</p>
+    <h2>Vídeo do Youtube</h2>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/UCVXWk2im2M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h2>Vídeo do Vimeo</h2>
+    <p>O vimeo tem mais flecibilidade nas configurações da incorporação. Da mesma forma que o youtube, é só colocar o iframe no HTML</p>
+    <iframe src="https://player.vimeo.com/video/330207644?color=ff0179&title=0&portrait=0" width="500" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 </body>
 </html>
