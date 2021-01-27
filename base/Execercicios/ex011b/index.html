@@ -1,11 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mídias em HTML 5</title>
 </head>
 <body>
-    
+    <h1>Imagens Dinâmicas</h1>
+    <P>Para fazer as imagens se adaptaram dinmicamente a tela, são usadas 2 tags. A PICTURE, tem o intuito de receber várias imagens dentro dela e a tag SOURCE MEDIA, serve configura as imagens.
+        <p>IMPORTANTE: As imagens tem que estão na ordem, debaixo pra cima, da maior para a menor, se não vai quebrar a visualização.</p>
+    <p>O scirpt pra ela manipulação de imagem em HTML, fica da seguinte forma:
+    <pre>
+        <code>
+    source media="(max-width: 750px)" srcset="foto1-p.png" type="image/png">
+    source media="(max-width: 1050px)" srcset="foto2-m.png" type="image/png">
+    img src="foto3-g.png" alt="Imagem flexivel">
+        </code>
+    </pre>
+    </p>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente amento e dinimuna o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="foto-m.png" type="image/png">
+        <img src="foto-g.png" alt="Imagem flexivel">
+    </picture>
 </body>
 </html>
